@@ -1,0 +1,31 @@
+/* pages/record/record.wxss */
+page{
+  background-color: lightblue;
+}
+
+.receiveTxt{
+  color:white;
+  text-decoration: underline;
+}
+
+.receiveSuccess{
+  color:green;
+  text-decoration: underline;
+}
+
+.receiveFail{
+  color:red;
+  text-decoration: underline;
+}
+
+.canvas {
+    width: 100%;
+    height: 200px;
+    display:flex;
+    justify-content: center;
+}
+
+
+
+
+

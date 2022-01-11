@@ -1,0 +1,41 @@
+<!--pages/me/me.wxml-->
+<view class = "container"> 
+
+  <view class = "info">
+
+  <view>
+    <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+  </view>
+
+  <view class = "info-word">
+    <text class="userinfo-nickname">Nickname: {{userInfo.nickName}}</text>
+  </view>
+
+  </view>
+    <text>\n\n\n\n</text>
+  <view class = "aboutUs">
+    <!--text class = "txt1">About Us \n</text-->
+    <text class = "txt2">Group Number: 14\nSupervisor: Heng Yu\nGroup Leader: Chen Liao\nVersion: 3.1</text>
+  </view>
+
+  <view class = "bottomBar">
+   
+    <button class = "bottomBtn" hover-class = "bottomBtn-hover" bindtap = "upload">
+      <image class = "btnImg" src = "/image/upload.png"> </image>
+      <view> Upload </view>
+    </button>
+
+    <button class = "bottomBtn" hover-class = "bottomBtn-hover" bindtap = "record">
+      <image class = "btnImg" src = "/image/record.jpg"> </image>
+      <view> Result </view>
+    </button>
+
+    <button class = "bottomBtn" hover-class = "bottomBtn-hover" bindtap = "me">
+      <image class = "btnImg" src = "/image/me.png"> </image>
+      <view> Me </view>
+    </button>
+
+  </view>
+
+</view>
+

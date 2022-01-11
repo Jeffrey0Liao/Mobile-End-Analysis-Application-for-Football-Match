@@ -1,0 +1,53 @@
+/* pages/me/me.wxss */
+page{
+  background-color: lightblue;
+}
+
+.info{
+  width: 420px;
+  height: 180px;
+  background-color: lightblue;
+  border-bottom: 1px solid white;
+  top: 0;
+  position: fixed;
+}
+
+.userinfo-avatar {
+  width: 100px;
+  height: 100px;
+  top: 40px;
+  left: 20px;
+  position: fixed;
+  border-radius: 50%;
+}
+
+.info-word{
+  top: 50px;
+  left: 150px;
+  position:fixed;
+}
+
+.userinfo-nickname{
+  font-size: 16px;
+  color: white;
+}
+
+.aboutUs{
+  width: 360px;
+  height: 450px;
+  display: flex;
+  flex-direction:column-reverse;
+
+}
+
+.txt1{
+  font-size: 25px;
+  color: white;
+}
+
+.txt2{
+  font-size: 15px;
+  color: white;
+  font-weight:lighter;
+  text-align:right;
+}

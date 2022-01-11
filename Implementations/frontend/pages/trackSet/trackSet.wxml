@@ -1,0 +1,56 @@
+<!--pages/trackSet/trackSet.wxml-->
+<view class = "container"> 
+
+
+
+<movable-area class = "area">
+
+  <movable-view id = "trackTarget" class = "movable-view" x="{{x}}" y="{{y}}" direction="all" bindchange = "onChange" bindscale = "onScale" scale scale-min= "0.5" scale-max = "3" scale-value = "{{scale}}" >
+
+  </movable-view>
+
+</movable-area>
+
+
+  <!--<view class = "video"> \n</view>-->
+  
+  <!--<text class = "track"> Track setting: </text> -->
+
+  <!--<text style = "color: white; font-size: 20px"> \n Choose the tracked behavior: </text>
+
+
+<radio-group class="radio-group" bindchange="radioChange">
+
+  <label class="radio" wx:for="{{items}}">
+    <radio class="radio" value="{{item.name}}" checked="{{item.checked}}" disabled="{{item.disabled}}" />{{item.value}} <text decode="{{true}}">&ensp;&ensp;</text>
+  </label> 
+
+</radio-group> -->
+
+
+<text>\n\n</text>
+
+
+<button class = "start" hover-class = "bottomBtn-hover" bindtap = "uploadCoord"> Start Tracking </button>
+
+  <view class = "bottomBar">
+
+    <button class = "bottomBtn" hover-class = "bottomBtn-hover" bindtap = "upload">
+      <image class = "btnImg" src = "/image/upload.png"> </image>
+      <view> Upload </view>
+    </button>
+
+    <button class = "bottomBtn" hover-class = "bottomBtn-hover" bindtap = "record">
+      <image class = "btnImg" src = "/image/record.jpg"> </image>
+      <view> Record </view>
+    </button>
+
+    <button class = "bottomBtn" hover-class = "bottomBtn-hover" bindtap = "me">
+      <image class = "btnImg" src = "/image/me.png"> </image>
+      <view> Me </view>
+    </button>
+
+  </view>
+
+</view>
+

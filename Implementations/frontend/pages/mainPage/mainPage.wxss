@@ -1,0 +1,46 @@
+/* pages/mainPage/mainPage.wxss */
+page{
+  background-color:lightblue;
+}
+
+.rec{
+  width: 300px;
+  height: 180px;
+  display:flex;
+  justify-content: center;
+  background-color:white;
+}
+
+
+.guide{
+  color: white;
+}
+.setBtn{
+  /*display: flex;
+  justify-content: center;*/
+  width: 40%;
+  margin-top: 20rpx;
+  background-color: white;
+  color: lightblue;
+}
+
+.video{
+  width: 360px;
+  height: 270px;
+  display:flex;
+  justify-content: center;
+}
+
+.movable-view{
+  width: 40px;
+  height: 60px;
+  background-color: rgba(0,0,0,0.5);
+  /*background-color: red;*/
+}
+
+
+.helpTxt{
+  color:white;
+  text-decoration: underline;
+}
+

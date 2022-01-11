@@ -1,0 +1,44 @@
+<!--pages/mainPage/mainPage.wxml-->
+<view class = "container"> 
+
+
+<movable-area class = "video">
+    <video src = "{{src}}" class = "video"> 
+
+      <movable-view id = "trackTarget" class = "movable-view" x="{{x}}" y="{{y}}" direction="all" bindchange = "onChange" bindscale = "onScale" scale scale-min= "1" scale-max = "3" scale-value = "{{scale}}" >
+
+      </movable-view>
+     
+    </video>
+ </movable-area>
+
+ <text>\n\n</text>
+
+  <button class = "setBtn" bindtap = "addVideo"> Upload </button>
+
+  <button class = "setBtn" hover-class = "bottomBtn-hover" bindtap = "uploadCoord" disabled='{{isDisabled}}'> {{tracking_button}} </button>
+
+  <view bindtap = "help"> 
+  <text class = "helpTxt">HELP</text>
+  </view>
+
+  <view class = "bottomBar">
+   
+    <button class = "bottomBtn" hover-class = "bottomBtn-hover" bindtap = "upload">
+      <image class = "btnImg" src = "/image/upload.png"> </image>
+      <view> Upload </view>
+    </button>
+
+    <button class = "bottomBtn" hover-class = "bottomBtn-hover" bindtap = "record">
+      <image class = "btnImg" src = "/image/record.jpg"> </image>
+      <view> Result </view>
+    </button>
+
+    <button class = "bottomBtn" hover-class = "bottomBtn-hover" bindtap = "me">
+      <image class = "btnImg" src = "/image/me.png"> </image>
+      <view> Me </view>
+    </button>
+
+  </view>
+
+</view>

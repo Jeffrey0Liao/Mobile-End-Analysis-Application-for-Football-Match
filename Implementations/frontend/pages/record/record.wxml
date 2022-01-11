@@ -1,0 +1,42 @@
+<!--pages/record/record.wxml-->
+<view class = "container"> 
+
+<view bindtap = "receiveResult"> 
+  <text class = "{{receive_button}}">{{receive}}</text>
+  <text>\n\n</text>
+</view>
+<view>
+<button bindtap = "showResult"> Show the Result </button>
+</view>
+
+<canvas class = "canvas" canvas-id="columnCanvas" class="canvas"></canvas>
+
+<canvas class = "canvas" canvas-id="lineCanvas"></canvas>
+
+<canvas class = "canvas" canvas-id="pieCanvas"></canvas>
+
+<canvas class = "canvas" canvas-id="ringCanvas"></canvas>
+
+
+
+  <view class = "bottomBar">
+   
+    <button class = "bottomBtn" hover-class = "bottomBtn-hover" bindtap = "upload">
+      <image class = "btnImg" src = "/image/upload.png"> </image>
+      <view> Upload </view>
+    </button>
+
+    <button class = "bottomBtn" hover-class = "bottomBtn-hover" bindtap = "record">
+      <image class = "btnImg" src = "/image/record.jpg"> </image>
+      <view> Result </view>
+    </button>
+
+    <button class = "bottomBtn" hover-class = "bottomBtn-hover" bindtap = "me">
+      <image class = "btnImg" src = "/image/me.png"> </image>
+      <view> Me </view>
+    </button>
+
+  </view>
+
+</view>
+

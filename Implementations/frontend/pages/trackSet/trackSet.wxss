@@ -1,0 +1,40 @@
+/* pages/trackSet/trackSet.wxss */
+page{
+  background-color: lightblue;
+}
+
+.area{
+  width: 360px;
+  height: 200px;
+  display:flex;
+  justify-content: center;
+  background-color:white;
+}
+
+.movable-view{
+  width: 30px;
+  height: 60px;
+  background-color:rgba(0,0,0,0.1);
+}
+
+.track{
+  height: 40px;
+  color: white; 
+  font-size: 20px;
+  border: 1px solid white;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+}
+
+.radio {
+    margin-top: 20px;
+}
+
+.start{
+  color: lightblue;
+}
